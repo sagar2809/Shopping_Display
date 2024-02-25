@@ -1,0 +1,43 @@
+.sidebar {
+  @apply flex-1 bg-gray-200 flex flex-col items-center justify-between py-5;
+  width: 70vw;
+}
+
+.logo {
+  @apply w-full text-center mb-5 border-b-2 border-gray-300 text-3xl px-5 overflow-hidden bg-white -mt-5;
+  height: 92px;
+}
+
+.navigation {
+  @apply w-full flex-1 px-5;
+}
+
+.navigation .button {
+  @apply block w-full p-2 mb-2 bg-white text-left text-base text-gray-700 border-b-2 border-solid border-transparent;
+}
+
+.navigation .active {
+  @apply text-orange-500 border-orange-500;
+}
+
+.bottom-aligned {
+  @apply mt-auto;
+}
+
+.logoSize {
+  object-fit: cover;
+  object-position: 0px 20px;
+}
+
+/* Media query for mobile view */
+@media (min-width: 768px) {
+  .sidebar {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 360px) {
+  .sidebar {
+    width: 80vw;
+  }
+}

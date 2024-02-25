@@ -1,0 +1,24 @@
+.breadcrumb {
+  @apply flex items-center list-none p-4 m-0 font-semibold;
+}
+
+.breadcrumb-item {
+  @apply flex items-center cursor-pointer;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "/";
+  @apply mx-2;
+}
+
+.breadcrumb-link {
+  @apply text-gray-700 no-underline;
+}
+
+.breadcrumb-link:hover {
+  @apply underline;
+}
+
+.selected {
+  @apply text-orange-500;
+}

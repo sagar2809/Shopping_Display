@@ -1,0 +1,30 @@
+.input {
+  @apply px-4 py-2 border border-gray-300 rounded;
+  font-size: 16px;
+  min-width: 205px;
+}
+
+.input:focus {
+  @apply outline-none border-orange-500;
+  box-shadow: 0 0 5px orange;
+}
+.input::placeholder {
+  @apply text-gray-500;
+}
+
+.inputWrapper {
+  @apply flex justify-end items-center px-4 py-2;
+}
+
+.title {
+  @apply text-2xl font-bold underline-offset-4 underline;
+}
+
+@media (max-width: 768px) {
+  .inputWrapper {
+    @apply flex-col gap-2;
+  }
+  .input {
+    @apply w-full;
+  }
+}
