@@ -1,0 +1,12 @@
+.form {
+  @apply flex flex-col max-w-3xl mt-0 mr-auto p-5 shadow-sm;
+}
+.label {
+  @apply text-base text-black my-6;
+}
+.input {
+  @apply h-9 pt-1 pb-1 text-sm rounded-lg;
+}
+.button {
+  @apply mt-5 text-white bg-sky-600 border-0 rounded-xl h-9;
+}

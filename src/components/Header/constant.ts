@@ -31,4 +31,9 @@ export const headerList = [
     link: "/contact",
     className: `${style.navLink}`,
   },
+  {
+    label: "Login",
+    link: "/login",
+    className: `${style.navLink}`,
+  },
 ];
